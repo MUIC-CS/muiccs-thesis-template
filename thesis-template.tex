@@ -1,0 +1,198 @@
+% example of how to use template
+
+% set the template of document
+\documentclass[natbib]{muthesis}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{float}
+\usepackage{etoolbox}
+\usepackage{mathtools,amsmath}
+\usepackage{physics}
+\usepackage{empheq}
+\usepackage{esdiff}
+\restylefloat{table}
+\restylefloat{figure}
+\bibliographystyle{plain} % if you are using bibtex
+
+% create new command for convenience
+% \newcommand{\beq}{\begin{equation}}
+% \newcommand{\eeq}{\end{equation}}
+% \newcommand{\bfig}{\begin{figure}}
+% \newcommand{\efig}{\end{figure}}
+% \newcommand{\bfa}{\left\{\begin{array}}
+% \newcommand{\efa}{\end{array}\right.}
+% \renewcommand{\arraystretch}{1.5}
+
+% set number of candidate (from 1 - 3) and advisor (from 1 - 2)
+\noofcandidate{1}
+\noofadvisor{1}
+
+% information for front page
+\title{Thesis Title}
+\candidate{Candidate Firstname Lastname}
+
+\degree{B.Sc.}
+\subject{Computer Science}
+\submissionyear{2016}
+
+% information for page i (advisors)
+\candidatetitle{}
+\majoradvisor{Advisor Name}
+\majoradvisorsubject{Computer Science}
+
+% information for page ii (exam committee)
+\submissiondate{1st April 2016}
+
+% Advisor
+\advisor{Advisor Name}
+
+% Program Director
+\programdirector{Program Director Name}
+% Division Chair
+\chair{Division Chair Name}
+
+% information for page iv (ABSTRACT)
+
+\candidatenumber{id number ICCS/B}
+
+%\longsubject
+\keywords{Algorithm}
+
+% information for biography
+
+% For first candidate
+\dateofbirth{13th May 1995}
+\placeofbirth{Bangkok, Thailand}
+\firstdegree{Certificate of Upper Secondary School}
+\firstdegreemajor{Year 12}
+\firstdegreeinstitution{Hogwarts School of Witchcraft and Wizardry}
+\firstdegreeyears{2002-2011}
+\years{2011-2016}
+\homeaddress{5 Sukhumvit rd. Soi Ramindra 8 Yaek 215, Anusawari}
+\homeaddressLnII{Bangna, Bangkok 11220, Thailand}
+\email{harry.potter@hogwarts.com}
+
+\begin{document}
+
+  \maketitle
+
+  \acknowledgements{
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc erat metus, sodales eget dignissim vel, feugiat a dui. Nam non sem ut turpis placerat viverra sollicitudin nec elit. Quisque luctus augue quis ex luctus porta vel eget dolor. In vehicula eros at auctor tempor. Quisque in ligula a orci volutpat malesuada ut eu nulla. Phasellus porttitor, enim ut tincidunt consectetur, libero arcu condimentum dolor, ut suscipit mi erat vitae risus. Duis quis blandit nulla. Morbi ut rutrum ipsum. Integer viverra nisi tortor, ac venenatis nisl vulputate a. Donec fermentum dictum condimentum. Proin venenatis turpis felis. Pellentesque ipsum magna, malesuada vel dapibus eget, placerat quis mauris. Duis ut commodo lacus, et sodales orci.
+  }
+
+  \abstract{
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc erat metus, sodales eget dignissim vel, feugiat a dui. Nam non sem ut turpis placerat viverra sollicitudin nec elit. Quisque luctus augue quis ex luctus porta vel eget dolor. In vehicula eros at auctor tempor. Quisque in ligula a orci volutpat malesuada ut eu nulla. Phasellus porttitor, enim ut tincidunt consectetur, libero arcu condimentum dolor, ut suscipit mi erat vitae risus. Duis quis blandit nulla. Morbi ut rutrum ipsum. Integer viverra nisi tortor, ac venenatis nisl vulputate a. Donec fermentum dictum condimentum. Proin venenatis turpis felis. Pellentesque ipsum magna, malesuada vel dapibus eget, placerat quis mauris. Duis ut commodo lacus, et sodales orci.
+  }
+
+  % Table of content
+  \linespacing{1.2}
+  \tableofcontents
+
+  \linespacing{1.77}
+
+
+  \chapter{This is Chapter 1}
+
+  \section{Inertial Frame}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae cursus erat. Nullam arcu nisl, mattis sed semper vitae, pretium sed sapien. Vestibulum non sapien tellus. Curabitur fermentum enim ac neque imperdiet interdum. Ut in blandit nulla, sodales cursus massa. Quisque ac odio eget odio pellentesque sodales. Nulla eu egestas erat. Sed ut viverra nisi. Praesent eget iaculis metus. Nunc dui nunc, lacinia quis lectus et, egestas pharetra sem. Cras fermentum dui in pharetra bibendum. Proin aliquet velit massa. Phasellus sed nibh nec lectus elementum vehicula. Maecenas ac semper tellus. Nam sit amet tempor nisi. Mauris pharetra viverra orci, sit amet dignissim felis malesuada a.
+
+  Donec vel euismod velit. Sed a sapien vitae sapien blandit dapibus sit amet ac mi. Morbi nulla urna, porttitor in mattis vitae, vehicula a metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla eget diam auctor neque vehicula laoreet. Nullam malesuada laoreet dolor, eu blandit metus feugiat eu. Nulla at velit vitae justo vehicula porttitor. Maecenas tempus nunc purus. Nunc pharetra blandit tortor, vitae feugiat mi lobortis ac. Vestibulum lobortis tincidunt blandit. Morbi ac elit ante.
+
+  \section{Galilean Transformation}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor luctus mi, id gravida quam ultricies nec. Sed a ex eu sem pulvinar feugiat. Sed quam eros, rutrum at viverra et, egestas ac felis. Phasellus eleifend sem nisl, id egestas ligula pretium ac. Maecenas ex dolor, congue eget tellus id, aliquet maximus enim. Sed et elit a augue lacinia laoreet. Aenean congue sapien dui, in vulputate ex suscipit ac. Etiam luctus ipsum pretium imperdiet luctus. Quisque fermentum feugiat purus, ut vestibulum turpis tincidunt a. Proin porttitor nunc at iaculis maximus. Nulla eu efficitur nisi, eget mollis turpis. Nullam ac quam vitae risus vehicula mollis. Vivamus gravida porta magna, vel rhoncus ex pulvinar nec. In hac habitasse platea dictumst.
+
+
+  \section{Aether and Michelson-Morley experiment}
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor luctus mi, id gravida quam ultricies nec. Sed a ex eu sem pulvinar feugiat. Sed quam eros, rutrum at viverra et, egestas ac felis. Phasellus eleifend sem nisl, id egestas ligula pretium ac. Maecenas ex dolor, congue eget tellus id, aliquet maximus enim. Sed et elit a augue lacinia laoreet. Aenean congue sapien dui, in vulputate ex suscipit ac. Etiam luctus ipsum pretium imperdiet luctus. Quisque fermentum feugiat purus, ut vestibulum turpis tincidunt a. Proin porttitor nunc at iaculis maximus. Nulla eu efficitur nisi, eget mollis turpis. Nullam ac quam vitae risus vehicula mollis. Vivamus gravida porta magna, vel rhoncus ex pulvinar nec. In hac habitasse platea dictumst.
+
+  \section{The concept of spacetime}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor luctus mi, id gravida quam ultricies nec. Sed a ex eu sem pulvinar feugiat. Sed quam eros, rutrum at viverra et, egestas ac felis. Phasellus eleifend sem nisl, id egestas ligula pretium ac. Maecenas ex dolor, congue eget tellus id, aliquet maximus enim. Sed et elit a augue lacinia laoreet. Aenean congue sapien dui, in vulputate ex suscipit ac. Etiam luctus ipsum pretium imperdiet luctus. Quisque fermentum feugiat purus, ut vestibulum turpis tincidunt a. Proin porttitor nunc at iaculis maximus. Nulla eu efficitur nisi, eget mollis turpis. Nullam ac quam vitae risus vehicula mollis. Vivamus gravida porta magna, vel rhoncus ex pulvinar nec. In hac habitasse platea dictumst.
+
+
+  \section{Flat spacetime}
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus metus, dapibus non eros et, vehicula luctus justo. Maecenas consectetur diam non risus dapibus tempus. Morbi ultrices sem in nulla egestas, et viverra est feugiat. Nunc ultrices pretium lobortis. Sed gravida nulla ut ligula rhoncus, sit amet feugiat magna scelerisque. Proin aliquet et lacus nec mollis. Integer dictum rutrum est, in sodales lorem finibus vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+  Nam sed interdum magna, sit amet egestas tortor. Curabitur quis augue volutpat, pellentesque mi molestie, sagittis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. In velit turpis, auctor id ante quis, ultricies porttitor orci. Nullam ut nisl in dolor aliquet vehicula. Maecenas neque mauris, aliquet eget vestibulum at, pulvinar rhoncus odio. Duis et arcu cursus, sagittis augue in, ultricies lorem. Maecenas ultrices lectus id pellentesque aliquam. Pellentesque id sapien eu est elementum ultrices ut sit amet elit. Nullam at consequat sapien, et egestas ex. Quisque vitae eros nunc. Curabitur nec erat vitae dui pellentesque ullamcorper sed at enim. Nullam tellus nunc, malesuada ac lobortis vulputate, eleifend vitae lectus. Nam nec diam massa. Vestibulum ac sollicitudin lacus.
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  Phasellus eget vestibulum ligula, sit amet vehicula enim. Aenean faucibus purus leo, id fringilla diam tristique nec. Maecenas ut pharetra erat, id gravida diam. In hac habitasse platea dictumst. Vivamus finibus felis lectus. Cras mauris enim, accumsan rhoncus tempus in, suscipit vitae sem. Suspendisse eu ligula lacus. Sed mattis risus at dui tincidunt feugiat.
+
+  Cras ultrices aliquam malesuada. Quisque ut lectus orci. Suspendisse facilisis libero nunc. Nam id sollicitudin magna. Vivamus tempus tempor mauris ut hendrerit. Donec auctor lobortis lorem at scelerisque. Quisque sed felis ac ex mattis hendrerit. Nulla vulputate eu tortor sit amet hendrerit. Aenean eleifend dolor nec interdum facilisis. Duis faucibus porta pellentesque. Quisque efficitur leo sed tellus auctor, a rhoncus risus scelerisque.
+
+  \section{Light cones and proper time}
+  Nam sed interdum magna, sit amet egestas tortor. Curabitur quis augue volutpat, pellentesque mi molestie, sagittis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. In velit turpis, auctor id ante quis, ultricies porttitor orci. Nullam ut nisl in dolor aliquet vehicula. Maecenas neque mauris, aliquet eget vestibulum at, pulvinar rhoncus odio. Duis et arcu cursus, sagittis augue in, ultricies lorem. Maecenas ultrices lectus id pellentesque aliquam. Pellentesque id sapien eu est elementum ultrices ut sit amet elit. Nullam at consequat sapien, et egestas ex. Quisque vitae eros nunc. Curabitur nec erat vitae dui pellentesque ullamcorper sed at enim. Nullam tellus nunc, malesuada ac lobortis vulputate, eleifend vitae lectus. Nam nec diam massa. Vestibulum ac sollicitudin lacus.
+
+  \section{Time dilation}
+  Nam sed interdum magna, sit amet egestas tortor. Curabitur quis augue volutpat, pellentesque mi molestie, sagittis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. In velit turpis, auctor id ante quis, ultricies porttitor orci. Nullam ut nisl in dolor aliquet vehicula. Maecenas neque mauris, aliquet eget vestibulum at, pulvinar rhoncus odio. Duis et arcu cursus, sagittis augue in, ultricies lorem. Maecenas ultrices lectus id pellentesque aliquam. Pellentesque id sapien eu est elementum ultrices ut sit amet elit. Nullam at consequat sapien, et egestas ex. Quisque vitae eros nunc. Curabitur nec erat vitae dui pellentesque ullamcorper sed at enim. Nullam tellus nunc, malesuada ac lobortis vulputate, eleifend vitae lectus. Nam nec diam massa. Vestibulum ac sollicitudin lacus.
+
+
+  \section{Lorentz Boosts}
+  Nam sed interdum magna, sit amet egestas tortor. Curabitur quis augue volutpat, pellentesque mi molestie, sagittis nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. In velit turpis, auctor id ante quis, ultricies porttitor orci. Nullam ut nisl in dolor aliquet vehicula. Maecenas neque mauris, aliquet eget vestibulum at, pulvinar rhoncus odio. Duis et arcu cursus, sagittis augue in, ultricies lorem. Maecenas ultrices lectus id pellentesque aliquam. Pellentesque id sapien eu est elementum ultrices ut sit amet elit. Nullam at consequat sapien, et egestas ex. Quisque vitae eros nunc. Curabitur nec erat vitae dui pellentesque ullamcorper sed at enim. Nullam tellus nunc, malesuada ac lobortis vulputate, eleifend vitae lectus. Nam nec diam massa. Vestibulum ac sollicitudin lacus.
+
+  \section{Lorentz Contraction}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{Relativistic rule for addition of velocities}
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{The speed of light is the same in all frame of reference}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+
+  \chapter{Tensor Analysis}
+
+  \section{Einstein Summation Convention}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{Metric Tensor}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{Definition of A Tensor}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+
+  \section{Components of A Tensor}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{Dual Vectors}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{Basis of Dual Vectors}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{Gradient of Scalar Function}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{Derivative Notation}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{Metric from mapping a vector on a dual vector}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{Transformation between vectors and dual vectors}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{Dot Product of Dual Vectors}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \section{(M,N) Type Tensor}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id mi ligula. Integer non magna et nisi tempor luctus a sed purus. Sed rhoncus risus sed arcu pellentesque sagittis. Nulla et metus lectus. Duis commodo porttitor massa, sit amet tincidunt enim porttitor at. Phasellus dictum sem at dui facilisis tincidunt. Fusce sed suscipit lorem, ac convallis erat. Praesent nunc lacus, imperdiet vel dignissim id, elementum ut dolor.
+
+  \begin{thebibliography}{1}
+
+  \bibitem{b}  Bernard F. Schutz, {\em A First Course in General Relativity} Cambridge University Press, 1985.
+
+  \bibitem{h} Hartle, James B., {\em Gravity, An Introduction to Einstein’s General Relativity} Addison Wessley, Boston, 2003.
+
+  \end{thebibliography}
+
+  \biography
+
+\end{document}
